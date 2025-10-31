@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabungan Visualisasi</title>
+    <style>
+        /* Gaya dasar untuk tata letak */
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .plot-container { 
+            border: 1px solid #ccc; 
+            margin-bottom: 25px; 
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 { 
+            font-size: 1.5em; 
+            border-bottom: 2px solid #eee; 
+            padding-bottom: 5px; 
+            margin-top: 0;
+            color: #444;
+        }
+        iframe {
+            /* Membuat iframe responsif dan mengisi lebar kontainer */
+            width: 100%;
+            /* Anda bisa mengatur tinggi default di sini */
+            height: 600px; 
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Gabungan Visualisasi Plot 3D</h1>
+
+    <div class="plot-container">
+        <h2>Visualisasi PCA Data Pre-BERT</h2>
+        <iframe src="3d_viz_pca_pre_BERT.html" title="Visualisasi PCA pre-BERT"></iframe>
+    </div>
+
+    <div class="plot-container">
+        <h2>Visualisasi PCA Data Post-BERT</h2>
+        <iframe src="3d_viz_pca_post_BERT.html" title="Visualisasi t-SNE post-BERT"></iframe>
+    </div>
+
+    <div class="plot-container">
+        <h2>Visualisasi PCA Data Combained-BERT</h2>
+        <iframe src="3d_viz_pca_combined_BERT.html" title="Visualisasi UMAP combined-BERT"></iframe>
+    </div>
+
+</body>
+</html>
